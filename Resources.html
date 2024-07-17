@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="author" content="Daniel Rodriguez" >
+    <meta
+      name="keywords"
+      content="Software Engineer, Nike, Certification, Resources, Training"
+    >
+    <meta
+      name="description"
+      content="Resources and certifications for becoming a Software Engineer at Nike"
+    >
+    <title>Resources - Software Engineer at Nike</title>
+    <link rel="stylesheet" href="RodriguezDanielStylesSheet.css" >
+  </head>
+  <body>
+    <header>
+      <h1>Resources</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="RodriguezDanielHome.html">Home</a></li>
+        <li><a href="JobDetails.html">Job Details</a></li>
+        <li><a href="Resources.html">Resources</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>Certifications and Training</h2>
+        <p>
+          Obtaining relevant certifications can boost your qualifications for a
+          Software Engineer position at Nike. Below are some recommended
+          certifications:
+        </p>
+        <ul>
+          <li>
+            <a href="https://www.aws.training/Certification"
+              >AWS Certification</a
+            >
+          </li>
+          <li><a href="https://www.grafana.com">Grafana Certification</a></li>
+          <li>
+            <a
+              href="https://www.coursera.org/specializations/google-cloud-architect"
+              >Google Cloud Architect</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Additional Resources</h2>
+        <ul>
+          <li><a href="https://www.nike.com">Nike Official Website</a></li>
+          <li><a href="https://www.linkedin.com/in/daniel-a-rodriguez-">LinkedIn</a></li>
+          <li><a href="https://www.github.com/D-A-Rod">GitHub</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Feedback Form</h2>
+        <!-- <form action="submit_form.php" method="post"> -->
+        <form id="feedbackForm" onsubmit="showAlert(); return false;">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" ><br >
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" ><br >
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback"></textarea><br >
+          <label for="job_interest">Job Interest:</label>
+          <input type="text" id="job_interest" name="job_interest" ><br >
+          <label for="experience">Experience:</label>
+          <input
+            type="number"
+            id="experience"
+            name="experience"
+            min="0"
+            max="50"
+          ><br >
+          <label for="certifications">Certifications:</label>
+          <input type="text" id="certifications" name="certifications" ><br >
+          <input type="submit" value="Submit" >
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Daniel Rodriguez. All rights reserved.</p>
+    </footer>
+    <script>
+      function showAlert() {
+        alert("Thank you for your feedback!");
+      }
+    </script>
+  </body>
+</html>
